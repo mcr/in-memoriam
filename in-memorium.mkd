@@ -22,8 +22,8 @@ author:
   email: mcr+ietf@sandelman.ca
 
 normative:
-  BCP14: RFC8174
   RFC6890:
+  RFC8126:
 
 venue:
   mail: ietf@ietf.org
