@@ -1,7 +1,7 @@
 ---
-title: "In Memorium: acknowledging key contributors"
+title: "In Memoriam: acknowledging key contributors"
 abbrev: IPv6-tombstone
-docname: draft-richardson-in-memorium-00
+docname: draft-richardson-in-memoriam-00
 
 ipr: trust200902
 area: Internet
@@ -27,7 +27,7 @@ normative:
 
 venue:
   mail: ietf@ietf.org
-  github: mcr/in-memorium
+  github: mcr/in-memoriam
 
 --- abstract
 
@@ -50,9 +50,9 @@ This document proposes a smaller mechanism for recognizing contributors after th
 
 # Protocol Description
 
-As described in IANA Considerations, a /64 prefix shall be allocated from the {{RFC6890}} Special Use Registry, named the IN-MEMORIUM prefix.
+As described in IANA Considerations, a /64 prefix shall be allocated from the {{RFC6890}} Special Use Registry, named the IN-MEMORIAM prefix.
 
-An entry shall be made in the reverse map for the IN-MEMORIUM prefix consisting of a number of TXT records.
+An entry shall be made in the reverse map for the IN-MEMORIAM prefix consisting of a number of TXT records.
 
 1. A TXT record would list the persons name, and their years.  For instance, it could say "Frederick J. Baker (February 28, 1952 - June 18, 2025)"
 
@@ -79,7 +79,7 @@ It is recommended that the IESG seek multiple sources of corroboration, and to r
 IANA is asked to allocate a /64 prefix from the IANA Special Use pool {{!RFC4773}}
 (2001::/23).
 
-A new sub-registry is to be created for this prefix called the "IETF In-Memorium prefix".
+A new sub-registry is to be created for this prefix called the "IETF In-Memoriam prefix".
 
 This new sub-registry will be maintained using the {{RFC8126}} IESG Approval process.
 No Internet-Draft or RFC is expected.
