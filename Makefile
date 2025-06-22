@@ -1,4 +1,4 @@
-DRAFT:=draft
+DRAFT:=in-memorium
 VERSION:=$(shell ./getver ${DRAFT}.mkd )
 EXAMPLES=
 

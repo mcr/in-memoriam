@@ -1,12 +1,9 @@
-# ANIMA operational considerations for BRSKI Registrar
+# IN-MEMORIUM
 
-The ANIMA WG Bootstrapping Remote Secure Key Infrastructure (BRSKI)
-protocol involves three parties: Pledge (device), Registrar and
-Manufacturer Authorized Signing Authority (MASA).
+This Internet-Draft proposes to allocate an IPv6 prefix from the IANA Special use registry to be used to leave memorials for IETF contributors who have died.
 
-This repository contains operational considerations for the Registrar
-function.  It is a candidate document for the ANIMA WG
-http://datatracker.ietf.org/wg/anima 
+This document is maintained at: https://github.com/mcr/in-memorium.
+
 
 
 

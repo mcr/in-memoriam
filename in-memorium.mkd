@@ -1,0 +1,104 @@
+---
+title: In Memorium: acknowledging key contributors
+abbrev: IPv6-tombstone
+docname: draft-richardson-in-memorium-00
+
+# stand_alone: true
+
+ipr: trust200902
+area: Internet
+kw: Internet-Draft
+cat: std
+
+coding: utf-8
+pi:    # can use array (if all yes) or hash here
+  toc: yes
+  sortrefs:   # defaults to yes
+  symrefs: yes
+
+author:
+
+- ins: M. Richardson
+  name: Michael Richardson
+  org: Sandelman Software Works
+  email: mcr+ietf@sandelman.ca
+
+normative:
+  BCP14: RFC8174
+  rfc6890:
+
+--- abstract
+
+This document allocates an IPv6 /64 prefix from the IANA Special Use registry.
+This prefix is to be used to provide memorials for key contributors to the IETF that have passed way.
+
+--- middle
+
+# Introduction
+
+At the time of this writing, the RFC series has been around for 55 years, and the IETF itself will celegrate 40 years in 2026.
+Given a typical minimum age of 30 for a first contribution, it is not surprising that many IETF contributors have retired, and each year a few people pass away of a variety of causes.
+
+When Jon Postel, the original RFC-editor, passed away in 1998, the Internet Society (ISOC) established the Jon Postel award, which is awarded approximately annualy.
+Another key contributor, Jun-ichiro Hagino, better known as Itojun, passed away in 2007, and a similar award was established by ISOC.
+
+These are key and important processes, but it is not scalable to establish such a memorial for everyone who has contributed.
+
+This document proposes a smaller mechanism for recognizing contributors after their death:  a permanent PTR and TXT record in the ip6.arpa zone.
+
+# Protocol Description
+
+As described in IANA Considerations, a /64 prefix shall be allocated from the {{RFC6890}} Special Use Registry, named the IN-MEMORIUM prefix.
+
+An entry shall be made in the reverse map for the IN-MEMORIUM prefix consisting of a number of TXT records.
+
+1. A TXT record would list the persons name, and their years.  For instance, it could say "Frederick J. Baker (February 28, 1952 - June 18, 2025)"
+
+2. A second TXT record would provide a URL to an obituary, such as:
+"https://en.wikipedia.org/wiki/Fred_Baker_%28engineer%29" or "https://datatracker.ietf.org/person/Fred%20Baker"
+
+The IPv6 address allocated may make use of all 64-lower bits.
+The recommended way to allocate this is to recognize that it consists of 4 units of 16-bits, and each of these groupings can be used to present RFC numbers up to 9999 easily.
+For instance, Fred Baker, is the author of RFC1220, RFC2804, RFC4595, and RFC8028 (and 60 other RFCs).
+Fred's address could be given as 2001:TBD:1220:2804:4595:8028.
+
+
+# Privacy Considerations
+
+The families the deceased should be consulted prior to approved the record as the record may be intrusive, or might include information the family would prefer to be private.
+
+# Security Considerations
+
+The Internet often includes hoaxes about the death of people, who have not in fact died.
+It is recommended that the IESG seek multiple sources of corrobration, and to react slowly to new proposals to allow the facts to be properly evaluated.
+
+# IANA Considerations
+
+IANA is asked to allocate a /64 prefix from the IANA Special Use pool {{!RFC4773}
+(2001::/23).
+
+A new sub-registry is to be created for this prefix called the "IETF In-Memorium prefix".
+
+This new sub-registry will be maintained using the {{RFC8126}} IESG Approval process.
+No Internet-Draft or RFC is expected.
+In some cases, the deceased may have left unfinished documents that are published posthumously, and it is appropriate for the IANA Considerations of that document to include the request.
+
+The IESG is otherwise asked to consider requests on an approximately twice yearly basis, reporting to the IETF plenary in March and November about such activity about any such allocations made.
+It is common for the deceased to be remembered during the plenaries.
+
+IANA hosts a number of reverse zones already, and this zone would be hosted by IANA.
+
+The IESG is considered the "Designated Experts" for this registry.
+
+Memorials are only for people who have died, and may not be used for memorials for those not yet medically dead.
+(In particular, someone in a coma even if they are not expected to recover)
+
+# Acknowledgements
+
+The people who said this wasn't the worst idea ever.
+
+# Changelog
+
+
+--- back
+
