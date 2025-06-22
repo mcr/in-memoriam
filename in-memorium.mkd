@@ -1,9 +1,7 @@
 ---
-title: In Memorium: acknowledging key contributors
+title: "In Memorium: acknowledging key contributors"
 abbrev: IPv6-tombstone
 docname: draft-richardson-in-memorium-00
-
-# stand_alone: true
 
 ipr: trust200902
 area: Internet
@@ -25,7 +23,7 @@ author:
 
 normative:
   BCP14: RFC8174
-  rfc6890:
+  RFC6890:
 
 --- abstract
 
@@ -74,7 +72,7 @@ It is recommended that the IESG seek multiple sources of corrobration, and to re
 
 # IANA Considerations
 
-IANA is asked to allocate a /64 prefix from the IANA Special Use pool {{!RFC4773}
+IANA is asked to allocate a /64 prefix from the IANA Special Use pool {{!RFC4773}}
 (2001::/23).
 
 A new sub-registry is to be created for this prefix called the "IETF In-Memorium prefix".
