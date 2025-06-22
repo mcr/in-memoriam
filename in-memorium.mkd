@@ -25,6 +25,10 @@ normative:
   BCP14: RFC8174
   RFC6890:
 
+venue:
+  mail: ietf@ietf.org
+  github: mcr/in-memorium
+
 --- abstract
 
 This document allocates an IPv6 /64 prefix from the IANA Special Use registry.
