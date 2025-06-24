@@ -46,7 +46,7 @@ Another key contributor, Jun-ichiro Hagino, better known as Itojun, passed away 
 
 These are key and important processes, but it is not scalable to establish such a memorial for everyone who has contributed.
 
-This document proposes a smaller mechanism for recognizing contributors after their death:  a permanent PTR and TXT record in the ip6.arpa zone.
+This document proposes a smaller mechanism for recognizing contributors after their death: a permanent PTR and TXT record in the ip6.arpa zone.
 
 # Protocol Description
 
@@ -67,7 +67,7 @@ Fred's address could be given as 2001:TBD:1220:2804:4595:8028.
 
 # Privacy Considerations
 
-The families the deceased should be consulted prior to approved the record as the record may be intrusive, or might include information the family would prefer to be private.
+The families of the deceased should be consulted prior to approved the record as the record may be intrusive, or might include information the family would prefer to be private.
 
 # Security Considerations
 
